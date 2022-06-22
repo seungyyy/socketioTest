@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.user-container {
+  flex: .5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  background-color: #a9bdce;
+  box-sizing: border-box;
+}
+
+.user-container label{
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.user-container #nickname {
+  border-radius: 3px;
+  border: none;
+  height: 100%;
+}
+
+.display-container {
+  flex: 12;
+  background-color: #b2c7d9;
+  overflow-y: auto;
+}
+
+.input-container {
+  flex: 1;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  flex: 2;
+  border: none;
+}
+
+.input-container button {
+  flex: .3;
+  border: none;
+  background-color: #ffeb33;
+  border-radius: 3px;
+}
+
+.chat-list li {
+  width: 90%;
+  padding: .3em;
+  display: flex;
+  align-items: flex-end;
+  margin-top: .3rem;
+}
+
+.chat-list li .profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-list li .profile img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.chat-list li .message {
+  border-radius: 5px;
+  padding: .5em;
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+.chat-list li .time {
+  font-size: 11px;
+}
+
+.chat-list .resived .message {
+  background-color: #fff;
+}
+
+.chat-list .sent .message {
+  background-color: #ffeb33;
+}
+
+.chat-list .sent {
+  flex-direction: row-reverse;
+  padding: 0;
+  float: right;
+}
+
+.chat-list li:last-child {
+  padding-bottom: 20px;
+}
