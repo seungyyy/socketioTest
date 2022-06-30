@@ -18,11 +18,11 @@ const io = new Server(server, {
 io.on("connect", (socket) => {
   socket.on("join_room", (data) => { 
     socket.join(data)
-    console.log(`user with id: ${socket.id} joined room: ${data}`)
   })
   socket.on('send_message', (data) => {
     socket.to(data.room).emit('receive_message', data);
   });
+
 })
 
 server.listen(5000, () => { 
