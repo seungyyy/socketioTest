@@ -2,6 +2,8 @@
 
 # dependencies
 /javascript/node_modules
+/react-websocket/client/node_modules
+/react-websocket/server/node_modules
 /.pnp
 .pnp.js
 ex.txt
